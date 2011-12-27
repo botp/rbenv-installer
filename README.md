@@ -18,7 +18,7 @@ Once `rbenv-installer` has been run there will be a new command
 available on `rbenv` which is used to update `rbenv`, plugins and
 the installer itself:
 
-    rbenv installer
+    rbenv update
 
 
 Bootstrap
