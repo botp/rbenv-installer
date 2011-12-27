@@ -24,23 +24,15 @@ the installer itself:
 Bootstrap
 ---------
 
-If you are installing `rbenv` in Ubuntu you need to install first the
-following packages:
+If you are installing `rbenv` in Ubuntu you'll probably need to install
+required packages first:
 
-    # Update, install development tools and git:
-    sudo apt-get update
-    sudo apt-get -y install build-essential
-    sudo apt-get -y install git-core
+    rbenv bootstrap-ubuntu-10-04
+    rbenv bootstrap-ubuntu-11-04
 
-    # Extras for RubyGems and Rails:
-    sudo apt-get -y install zlib1g-dev libssl-dev
 
-    # Readline Dev on Ubuntu 10.04 LTS:
-    sudo apt-get -y install libreadline5-dev
-
-    # Readline Dev on Ubuntu 11.10:
-    # sudo apt-get -y install libreadline-gplv2-dev
-
+About rbenv
+-----------
 
 **rbenv** source code is available at <https://github.com/sstephenson/rbenv>
 
