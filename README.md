@@ -14,7 +14,8 @@ Install Ruby `1.9.3-p0` and make it global:
 Bootstrap
 ---------
 
-    #!/usr/bin/env bash
+If you are installing `rbenv` in Ubuntu you need to install first the
+following packages:
 
     # Update, install development tools and git:
     sudo apt-get update
