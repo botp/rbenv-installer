@@ -1,9 +1,25 @@
-rbenv install
-=============
+rbenv installer
+===============
 
-Install and/or update [rbenv] and friends by running:
+Before Installing
+-----------------
+
+1. Install `git`:
+
+    apt-get -y install git-core
+
+2. Make sure your user has `sudo` privileges.
+
+
+Install
+-------
+
+Install [rbenv] and friends by running:
 
     curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+
+Installing a Ruby
+-----------------
 
 Install Ruby `1.9.3-p0` and make it global:
 
