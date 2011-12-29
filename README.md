@@ -4,7 +4,7 @@ rbenv installer
 This tool is used to install `rbenv` and some plugins. It also provides 
 scripts to install required software to be able to compile **Ruby**.
 
-Plugins installed are:
+Installed plugins are:
 
 - rbenv-vars
 - ruby-build
