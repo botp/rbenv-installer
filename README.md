@@ -1,6 +1,16 @@
 rbenv installer
 ===============
 
+This tool is used to install `rbenv` and some plugins. It also provides 
+scripts to install required software to be able to compile **Ruby**.
+
+Plugins installed are:
+
+- rbenv-vars
+- ruby-build
+- rbenv-installer
+
+
 Before Installing
 -----------------
 
@@ -30,9 +40,7 @@ Install Ruby `1.9.3-p0` and make it global:
 Updating
 --------
 
-Once `rbenv-installer` has been run there will be a new command
-available on `rbenv` which is used to update `rbenv`, plugins and
-the installer itself:
+Update `rbenv` and plugins provided by the installer running:
 
     rbenv update
 
