@@ -4,11 +4,11 @@ rbenv installer
 Before Installing
 -----------------
 
-1. Install `git`:
+Install `git`:
 
     apt-get -y install git-core
 
-2. Make sure your user has `sudo` privileges.
+Make sure your user has `sudo` privileges.
 
 
 Install
