@@ -14,9 +14,9 @@ Installed plugins are:
 Before Installing
 -----------------
 
-Install `git`:
+Install `git` and `curl`:
 
-    apt-get -y install git-core
+    apt-get -y install git-core curl
 
 Make sure your user has `sudo` privileges.
 
