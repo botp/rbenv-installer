@@ -52,7 +52,7 @@ If you are installing `rbenv` in Ubuntu you'll probably need to install
 required packages first:
 
     rbenv bootstrap-ubuntu-10-04
-    rbenv bootstrap-ubuntu-11-04
+    rbenv bootstrap-ubuntu-11-10
 
 
 About rbenv
