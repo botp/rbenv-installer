@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Verify Git is installed, otherwise suggest running bootstrap:
+# Verify Git is installed:
 if [ ! $(which git) ]; then
   echo "Git is not installed."
   exit
