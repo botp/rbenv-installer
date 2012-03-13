@@ -31,10 +31,10 @@ Install [rbenv] and friends by running:
 Installing a Ruby
 -----------------
 
-Install Ruby `1.9.3-p0` and make it global:
+Install Ruby `1.9.3p125` and make it global:
 
-    rbenv install 1.9.3-p0
-    rbenv global 1.9.3-p0
+    rbenv install 1.9.3p125
+    rbenv global 1.9.3p125
 
 
 Updating
