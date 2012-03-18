@@ -1,0 +1,12 @@
+#!/bin/bash
+
+VERSION=`rbenv version-name`
+RUBY_PATH="$HOME/.rbenv/versions/$VERSION"
+
+echo -n "Cleanup Ruby ${VERSION} gems? (y/N) "
+read verify
+if [ "$verify" == "y" ]; then
+  rm -rf $RUBY_PATH/lib/ruby/gems
+  $RUBY_PATH/bin/gem install bundler
+  $RUBY_PATH/bin/gem install rake
+fi
