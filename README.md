@@ -33,8 +33,8 @@ Installing a Ruby
 
 Install Ruby `1.9.3p125` and make it global:
 
-    rbenv install 1.9.3p125
-    rbenv global 1.9.3p125
+    rbenv install 1.9.3-p125
+    rbenv global 1.9.3-p125
 
 
 Updating
