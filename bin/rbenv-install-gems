@@ -3,5 +3,5 @@
 VERSION=`rbenv version-name`
 RUBY_PATH="$HOME/.rbenv/versions/$VERSION"
 
-$RUBY_PATH/bin/gem install bundler
-$RUBY_PATH/bin/gem install rake
+$RUBY_PATH/bin/gem install bundler --no-ri --no-rdoc
+$RUBY_PATH/bin/gem install rake --no-ri --no-rdoc
