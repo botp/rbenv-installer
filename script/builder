@@ -1,16 +1,14 @@
 #!/bin/bash
 
+# Set a $RBENV_PATH and create the packages folder:
 RBENV_PATH=$HOME/.rbenv
-mkdir -p $RBENV_PATH/{packages,plugins}
 
-# Install my own branch of `ruby-build` which contains a patch for
-# on the `binary-packages`.
-rm -rf $RBENV_PATH/plugins/ruby-build
-git clone git@github.com:fesplugas/ruby-build.git -b binary-packages $RBENV_PATH/plugins/ruby-build
-
-# Add `ruby-build` to the load PATH:
+# Install `ruby-build` and add it to the load PATH:
+rbenv install-patched-ruby-build
 PATH=$RBENV_PATH/plugins/ruby-build/bin:$PATH
 
+# Build packages:
+mkdir -p $RBENV_PATH/packages
 pushd $RBENV_PATH/packages
   RUBIES=(1.8.7-p358
           1.9.3-p125
