@@ -1,0 +1,24 @@
+#!/bin/bash
+
+RBENV_PATH=$HOME/.rbenv
+mkdir -p $RBENV_PATH/{packages,plugins}
+
+# Install my own branch of `ruby-build` which contains a patch for
+# on the `binary-packages`.
+rm -rf $RBENV_PATH/plugins/ruby-build
+git clone git@github.com:fesplugas/ruby-build.git -b binary-packages $RBENV_PATH/plugins/ruby-build
+
+# Add `ruby-build` to the load PATH:
+PATH=$RBENV_PATH/plugins/ruby-build/bin:$PATH
+
+pushd $RBENV_PATH/packages
+  RUBIES=(1.8.7-p358
+          1.9.3-p125
+          1.9.3-p0
+          ree-1.8.7-2011.03
+          ree-1.8.7-2012.02)
+
+  for ruby in "${RUBIES[@]}"; do
+    ruby-package build $ruby
+  done
+popd
