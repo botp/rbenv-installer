@@ -55,6 +55,20 @@ required packages first:
     rbenv bootstrap-ubuntu-11-10
 
 
+Ruby Packages
+-------------
+
+Install the custom `ruby-build` by using the following command:
+
+    rbenv install-patched-ruby-build
+
+Now when you install a new ruby it will try to download a package from
+a `RUBY_PACKAGE_REPO`. If no packages available it will compile the
+package as usual.
+
+   export RUBY_PACKAGE_REPO=https://www.strongspace.com/shared/lxc1jwhowa
+
+
 About rbenv
 -----------
 
