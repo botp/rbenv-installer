@@ -17,6 +17,8 @@ pushd $RBENV_PATH/packages
           ree-1.8.7-2012.02)
 
   for ruby in "${RUBIES[@]}"; do
-    ruby-package build $ruby
+    if [ ! -f $ruby* ]; then
+      ruby-package build $ruby
+    fi
   done
 popd
