@@ -9,7 +9,7 @@ PATH=$RBENV_PATH/plugins/ruby-build/bin:$PATH
 
 # Build packages:
 mkdir -p $RBENV_PATH/packages
-pushd $RBENV_PATH/packages
+pushd $RBENV_PATH/packages > /dev/null
   RUBIES=(1.8.7-p358
           1.9.3-p125
           1.9.3-p0
@@ -21,4 +21,4 @@ pushd $RBENV_PATH/packages
       ruby-package build $ruby
     fi
   done
-popd
+popd > /dev/null
