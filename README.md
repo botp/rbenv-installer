@@ -57,7 +57,7 @@ Ruby Packages
 
 Install the custom `ruby-build` by using the following command:
 
-    rbenv install-patched-ruby-build
+    rbenv patch-ruby-build
 
 Now when you install a new ruby it will try to download a package from
 a `RUBY_PACKAGE_REPO`. If no packages available it will compile the
