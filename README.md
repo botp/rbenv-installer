@@ -51,6 +51,10 @@ required packages first:
     rbenv bootstrap-ubuntu-10-04
     rbenv bootstrap-ubuntu-11-10
 
+To update `RubyGems` and install `bundler` and `rake`:
+
+    rbenv bootstrap
+
 
 Ruby Packages
 -------------
