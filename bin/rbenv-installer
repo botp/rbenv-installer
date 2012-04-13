@@ -12,7 +12,9 @@ RBENV_ROOT="$HOME/.rbenv"
 if [ ! -d "$RBENV_ROOT" ] ; then
   git clone git://github.com/sstephenson/rbenv.git $RBENV_ROOT
 else
-  pushd $RBENV_ROOT; git pull; popd
+  pushd $RBENV_ROOT > /dev/null
+    git pull
+  popd > /dev/null
 fi
 
 # Install plugins:
