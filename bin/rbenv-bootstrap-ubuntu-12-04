@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Update sources:
+sudo apt-get update
+
+# Install development tools:
+sudo apt-get -y install build-essential
+
+# Extras for RubyGems and Rails:
+sudo apt-get -y install zlib1g-dev libssl-dev
+
+# Readline Dev on Ubuntu 12.10:
+sudo apt-get -y install libreadline-gplv2-dev
