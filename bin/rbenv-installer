@@ -2,7 +2,7 @@
 
 # Verify Git is installed:
 if [ ! $(which git) ]; then
-  echo "Git is not installed."
+  echo "Git is not installed, can't continue."
   exit
 fi
 
@@ -12,10 +12,8 @@ RBENV_ROOT="$HOME/.rbenv"
 if [ ! -d "$RBENV_ROOT" ] ; then
   git clone git://github.com/sstephenson/rbenv.git $RBENV_ROOT
 else
-  pushd $RBENV_ROOT > /dev/null
-    echo "Pulling rbenv updates."
-    git pull
-  popd > /dev/null
+  cd $RBENV_ROOT
+  git pull
 fi
 
 # Install plugins:
@@ -34,10 +32,9 @@ for plugin in ${PLUGINS[@]} ; do
   if [ ! -d "$RBENV_PLUGIN_ROOT" ] ; then
     git clone git://github.com/$KEY/$VALUE.git $RBENV_PLUGIN_ROOT
   else
-    pushd $RBENV_PLUGIN_ROOT > /dev/null
-      echo "Pulling $VALUE updates."
-      git pull
-    popd > /dev/null
+    cd $RBENV_PLUGIN_ROOT
+    echo "Pulling $VALUE updates."
+    git pull
   fi
 
 done
