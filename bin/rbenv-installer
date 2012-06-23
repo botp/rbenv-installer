@@ -50,6 +50,8 @@ if [ ! $(which rbenv) ]; then
   echo "
 Seems you still have not added 'rbenv' to the load path:
 
+export RBENV_ROOT=\"\${HOME}/.rbenv\"
+
 if [ -d \"\${RBENV_ROOT}\" ]; then
   export PATH=\"\${RBENV_ROOT}/bin:\${PATH}\"
   eval \"\$(rbenv init -)\"
