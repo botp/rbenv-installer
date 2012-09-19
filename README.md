@@ -14,8 +14,6 @@ Install `git` and `curl`:
 
     sudo apt-get -y install git-core curl
 
-Make sure your user has `sudo` privileges.
-
 
 Install
 -------
