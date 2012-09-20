@@ -136,6 +136,7 @@ shopt -s nullglob
 make_shims /usr/bin/ruby
 make_shims /usr/bin/irb
 make_shims /usr/bin/bundler
+make_shims /usr/bin/rake
 
 # Restore the previous working directory.
 cd "$OLDPWD"
