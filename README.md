@@ -83,6 +83,8 @@ You can run it manually but everytime you open a new shell system shims will
 dissapear if you do not install a Ruby with `rbenv`. You can force the creation
 of system shims using:
 
+    export RBENV_ROOT="${HOME}/.rbenv"
+
     if [ -d "${RBENV_ROOT}" ]; then
       export PATH="${RBENV_ROOT}/bin:${PATH}"
       eval "$(rbenv init -)"
