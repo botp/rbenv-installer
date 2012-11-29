@@ -54,23 +54,6 @@ To update `RubyGems` and install `bundler` and `rake`:
     rbenv bootstrap
 
 
-Patch: Ruby Packages
---------------------
-
-Install patched `ruby-build` by using the following command:
-
-    rbenv patch-ruby-build
-
-Now when you install a new `Ruby` it will try to download a package
-from a `RUBY_PACKAGE_REPO`. If no packages available it will compile
-the package as usual.
-
-    export RUBY_PACKAGE_REPO=https://www.strongspace.com/shared/lxc1jwhowa
-
-You can always add the previous `export` into your `.bashrc` to install
-always from that package repo.
-
-
 Patch: rbenv-rehash-system
 --------------------------
 
