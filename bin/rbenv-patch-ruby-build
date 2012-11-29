@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-RBENV_ROOT="$HOME/.rbenv"
-RUBY_BUILD_ROOT=$RBENV_ROOT/plugins/ruby-build
-
-rm -rf $RUBY_BUILD_ROOT
-git clone git://github.com/fesplugas/ruby-build.git -b binary-packages $RUBY_BUILD_ROOT
