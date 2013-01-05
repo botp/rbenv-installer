@@ -6,6 +6,9 @@ sudo apt-get update
 # Install development tools:
 sudo apt-get -y install build-essential
 
+# Packages required for compilation of some stdlib modules
+sudo apt-get -y install tklib 
+
 # Extras for RubyGems and Rails:
 sudo apt-get -y install zlib1g-dev libssl-dev
 
