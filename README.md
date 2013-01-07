@@ -54,29 +54,6 @@ To update `RubyGems` and install `bundler` and `rake`:
     rbenv bootstrap
 
 
-Patch: rbenv-rehash-system
---------------------------
-
-Imagine you are using Ruby 1.9.3-p0 which is now provided by `Ubuntu 12.04-LTS`
-and you still want to be able to use `rbenv vars`. This is not possible with
-`rbenv` and this is why we created `rbenv-rehash-system` which is a patched
-version of the `rbenv-rehash` script provided by `rbenv`.
-
-You can run it manually but everytime you open a new shell system shims will
-dissapear if you do not install a Ruby with `rbenv`. You can force the creation
-of system shims using:
-
-    export RBENV_ROOT="${HOME}/.rbenv"
-
-    if [ -d "${RBENV_ROOT}" ]; then
-      export PATH="${RBENV_ROOT}/bin:${PATH}"
-      eval "$(rbenv init -)"
-      eval "$(rbenv rehash-system)"
-    fi
-
-Created system shims are: `ruby`, `irb` and `bundler`.
-
-
 About rbenv
 -----------
 
