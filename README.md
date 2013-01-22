@@ -31,7 +31,7 @@ Install Ruby `1.9.3-p374` and make it global:
     rbenv global 1.9.3-p374
 
 
-Updating 
+Updating
 --------
 
 Update `rbenv` and plugins provided by the installer running:
