@@ -7,12 +7,11 @@ scripts to install required software to be able to compile **Ruby**.
 Installed plugins are `rbenv-vars`, `ruby-build` & `rbenv-installer`.
 
 
-Before Installing
------------------
+Requirements
+------------
 
-Install `git` and `curl`:
-
-    sudo apt-get -y install git-core curl
+- Git
+- Curl
 
 
 Install
@@ -32,7 +31,7 @@ Install Ruby `1.9.3-p374` and make it global:
     rbenv global 1.9.3-p374
 
 
-Updating
+Updating 
 --------
 
 Update `rbenv` and plugins provided by the installer running:
@@ -44,7 +43,7 @@ Bootstrap
 ---------
 
 If you are installing `rbenv` in Ubuntu you'll probably need to install
-required packages first:
+some required packages. You can use the provided `bootstrap` scripts.
 
     rbenv bootstrap-ubuntu-12-04
     rbenv bootstrap-ubuntu-10-04
