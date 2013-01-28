@@ -1,10 +1,15 @@
 #!/bin/bash
 
 VERSION=`rbenv version-name`
-RUBY_PATH="$HOME/.rbenv/versions/$VERSION"
+GEM=`rbenv which gem`
 
-$RUBY_PATH/bin/gem update --system
-$RUBY_PATH/bin/gem install bundler --no-ri --no-rdoc
-$RUBY_PATH/bin/gem install rake --no-ri --no-rdoc
+if [ system = "$VERSION" ]; then
+  GEM="sudo $GEM"
+fi
+
+$GEM update --system
+$GEM install bundler --no-ri --no-rdoc
+$GEM install rake --no-ri --no-rdoc
 
 rbenv rehash
+
