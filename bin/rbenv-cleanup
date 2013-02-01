@@ -7,5 +7,4 @@ echo -n "Cleanup Ruby ${VERSION} gems? (y/N) "
 read verify
 if [ "$verify" == "y" ]; then
   rm -rf $RUBY_PATH/lib/ruby/gems
-  rbenv bootstrap
 fi

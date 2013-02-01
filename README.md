@@ -48,10 +48,6 @@ some required packages. You can use the provided `bootstrap` scripts.
     rbenv bootstrap-ubuntu-12-04
     rbenv bootstrap-ubuntu-10-04
 
-To update `RubyGems` and install `bundler` and `rake`:
-
-    rbenv bootstrap
-
 
 About rbenv
 -----------
