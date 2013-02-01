@@ -27,6 +27,7 @@ PLUGINS=(
   "sstephenson:rbenv-vars"
   "sstephenson:ruby-build"
   "fesplugas:rbenv-installer"
+  "fesplugas:rbenv-bootstrap"
   "rkh:rbenv-update"
 )
 
