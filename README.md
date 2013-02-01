@@ -4,7 +4,13 @@ rbenv installer
 This tool is used to install `rbenv` and some plugins. It also provides 
 scripts to install required software to be able to compile **Ruby**.
 
-Installed plugins are `rbenv-vars`, `ruby-build` & `rbenv-installer`.
+Installed plugins are:
+
+- `rbenv-vars`
+- `ruby-build`
+- `rbenv-installer`
+- `rbenv-update`
+- `rbenv-bootstrap`
 
 
 Requirements
@@ -46,7 +52,6 @@ If you are installing `rbenv` in Ubuntu you'll probably need to install
 some required packages. You can use the provided `bootstrap` scripts.
 
     rbenv bootstrap-ubuntu-12-04
-    rbenv bootstrap-ubuntu-10-04
 
 
 About rbenv
