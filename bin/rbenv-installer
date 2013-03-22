@@ -24,18 +24,18 @@ fi
 
 # Install plugins:
 PLUGINS=(
-  "sstephenson:rbenv-vars"
-  "sstephenson:ruby-build"
-  "sstephenson/rbenv-default-gems"
-  "fesplugas:rbenv-installer"
-  "fesplugas:rbenv-bootstrap"
-  "rkh:rbenv-update"
+  sstephenson/rbenv-vars
+  sstephenson/ruby-build
+  sstephenson/rbenv-default-gems
+  fesplugas/rbenv-installer
+  fesplugas/rbenv-bootstrap
+  rkh/rbenv-update
 )
 
 for plugin in ${PLUGINS[@]} ; do
 
-  KEY=${plugin%%:*}
-  VALUE=${plugin#*:}
+  KEY=${plugin%%/*}
+  VALUE=${plugin#*/}
 
   RBENV_PLUGIN_ROOT="${RBENV_ROOT}/plugins/$VALUE"
   if [ ! -d "$RBENV_PLUGIN_ROOT" ] ; then
