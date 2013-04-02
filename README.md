@@ -3,14 +3,6 @@
 This tool is used to install `rbenv` and some plugins. It also provides 
 scripts to install required software to be able to compile **Ruby**.
 
-Installed plugins are:
-
-- `rbenv-vars`
-- `ruby-build`
-- `rbenv-installer`
-- `rbenv-update`
-- `rbenv-bootstrap`
-
 
 ## Requirements
 
@@ -27,10 +19,10 @@ Install [rbenv] and friends by running:
 
 ## Installing a Ruby
 
-Install Ruby `1.9.3-p374` and make it global:
+Install Ruby `1.9.3-p392` and make it global:
 
-    rbenv install 1.9.3-p374
-    rbenv global 1.9.3-p374
+    rbenv install 1.9.3-p392
+    rbenv global 1.9.3-p392
 
 
 ## Updating

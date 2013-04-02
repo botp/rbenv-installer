@@ -30,6 +30,8 @@ PLUGINS=(
   fesplugas/rbenv-installer
   fesplugas/rbenv-bootstrap
   rkh/rbenv-update
+  rkh/rbenv-whatis
+  rkh/rbenv-use
 )
 
 for plugin in ${PLUGINS[@]} ; do
