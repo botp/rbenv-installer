@@ -19,10 +19,10 @@ Install [rbenv] and friends by running:
 
 ## Installing a Ruby
 
-Install Ruby `1.9.3-p392` and make it global:
+Install latest stable Ruby and make it global:
 
-    rbenv install 1.9.3-p392
-    rbenv global 1.9.3-p392
+    rbenv install 2.0.0-p247
+    rbenv global 2.0.0-p247
 
 
 ## Updating
