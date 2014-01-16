@@ -21,8 +21,8 @@ Install [rbenv] and friends by running:
 
 Install latest stable Ruby and make it global:
 
-    rbenv install 2.0.0-p247
-    rbenv global 2.0.0-p247
+    rbenv install 2.1.0
+    rbenv global 2.1.0
 
 
 ## Updating
