@@ -14,7 +14,7 @@ scripts to install required software to be able to compile **Ruby**.
 
 Install [rbenv] and friends by running:
 
-    curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 
 
 ## Installing a Ruby
