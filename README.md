@@ -1,7 +1,6 @@
 # rbenv installer
 
-This tool is used to install `rbenv` and some plugins. It also provides 
-scripts to install required software to be able to compile **Ruby**.
+This tool is used to install `rbenv` and some plugins.
 
 
 ## Requirements
