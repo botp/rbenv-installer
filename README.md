@@ -1,7 +1,5 @@
 # rbenv installer
 
-**Really, do not use it! Please, use the installer provided by rbenv or use homebrew if you are using a Mac.**
-
 This tool is used to install `rbenv` and some plugins. It also provides 
 scripts to install required software to be able to compile **Ruby**.
 
