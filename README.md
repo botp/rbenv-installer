@@ -1,7 +1,7 @@
 # rbenv installer
 
 This tool is used to install `rbenv` and some plugins.
-
+Plugin repo of fesplugas has been replaced by botp (since the former repo is no longer existing).
 
 ## Requirements
 
@@ -13,15 +13,20 @@ This tool is used to install `rbenv` and some plugins.
 
 Install [rbenv] and friends by running:
 
-    curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    curl https://raw.githubusercontent.com/botp/rbenv-installer/master/bin/rbenv-installer | bash
+
+
+## Finding a ruby version
+
+	rbenv install --list
 
 
 ## Installing a Ruby
 
 Install latest stable Ruby and make it global:
 
-    rbenv install 2.1.4
-    rbenv global 2.1.4
+    rbenv install 2.5.1
+    rbenv global 2.5.1
 
 
 ## Updating
@@ -36,7 +41,7 @@ Update `rbenv` and plugins provided by the installer running:
 If you are installing `rbenv` in Ubuntu you'll probably need to install
 some required packages. You can use the provided `bootstrap` scripts.
 
-    rbenv bootstrap-ubuntu-12-04
+    rbenv bootstrap-ubuntu-16-04
 
 
 ## About rbenv
