@@ -19,6 +19,27 @@ or using wget
 
 	wget -qO - https://raw.githubusercontent.com/botp/rbenv-installer/master/bin/rbenv-installer | bash
 
+after install, the script advises you to update your ~/.bash_profile to include the rbenv init shell settings/commands. just copy and paste the show text to your .bash_profile then source it using the ff
+
+	soure ~/.bash_profile
+
+enter
+	rbenv
+
+see if the command rbenv is responding
+
+## update rbenv after install
+it is adviseable to update rbenv right after install
+
+	rbenv update
+
+## Bootstrap
+
+If you are installing `rbenv` in Ubuntu you'll probably need to install
+some required packages. You can use the provided `bootstrap` scripts.
+
+    rbenv bootstrap-ubuntu-16-04
+
 
 ## Finding a ruby version
 
@@ -38,14 +59,6 @@ Install latest stable Ruby and make it global:
 Update `rbenv` and plugins provided by the installer running:
 
     rbenv update
-
-
-## Bootstrap
-
-If you are installing `rbenv` in Ubuntu you'll probably need to install
-some required packages. You can use the provided `bootstrap` scripts.
-
-    rbenv bootstrap-ubuntu-16-04
 
 
 ## About rbenv
