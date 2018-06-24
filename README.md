@@ -6,14 +6,18 @@ Plugin repo of fesplugas has been replaced by botp (since the former repo is no 
 ## Requirements
 
 - Git
-- Curl
+- Curl or wget
 
 
 ## Install
 
-Install [rbenv] and friends by running:
+Install [rbenv] and friends by running:   
 
     curl https://raw.githubusercontent.com/botp/rbenv-installer/master/bin/rbenv-installer | bash
+
+or using wget
+
+   wget -qO - https://raw.githubusercontent.com/botp/rbenv-installer/master/bin/rbenv-installer | bash
 
 
 ## Finding a ruby version
