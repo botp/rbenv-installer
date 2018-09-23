@@ -21,7 +21,7 @@ or using wget
 
 after install, the script advises you to update your ~/.bash_profile to include the rbenv init shell settings/commands. just copy and paste the show text to your .bash_profile then source it using the ff
 
-	soure ~/.bash_profile
+	source ~/.bash_profile
 
 enter
 	rbenv
