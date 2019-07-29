@@ -50,8 +50,8 @@ some required packages. You can use the provided `bootstrap` scripts.
 
 Install latest stable Ruby and make it global:
 
-    rbenv install 2.5.1
-    rbenv global 2.5.1
+    rbenv install 2.6.3
+    rbenv global 2.6.3
 
 
 ## Updating
