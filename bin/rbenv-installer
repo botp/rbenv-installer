@@ -29,6 +29,7 @@ PLUGINS=(
   sstephenson/rbenv-default-gems
   sstephenson/rbenv-gem-rehash
   botp/rbenv-installer
+  botp/rbenv-bootstrap
   rkh/rbenv-update
   rkh/rbenv-whatis
   rkh/rbenv-use
